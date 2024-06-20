@@ -1,0 +1,50 @@
+.slider {
+  &_outer {
+    margin-bottom: 25px;
+    width: calc(100% + 30px);
+    transform: translate(-15px, 0);
+  }
+}
+
+.info {
+  width: 100%;
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+.descr {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+@media (min-width: 1170px) {
+  .content {
+    flex-direction: row;
+    gap: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .slider {
+    &_outer {
+      margin-bottom: 0;
+      max-width: 370px;
+      width: 100% !important;
+      transform: unset !important;
+    }
+  }
+
+  .info {
+    height: 367px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .descr {
+    font-size: 16px;
+    color: #a4a4a4;
+  }
+}

@@ -1,0 +1,111 @@
+.modal {
+  --bar-height: 130px;
+  padding-bottom: var(--bar-height);
+}
+
+.content {
+  padding-top: 33px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.name_email {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.grade {
+  margin: 12px 0;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &_title {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 16px;
+  }
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  width: 30px;
+  height: 30px;
+  color: #e2e2e2;
+  &_selected {
+    color: var(--yellow);
+  }
+  &_ico {
+    width: inherit;
+    height: inherit;
+  }
+}
+
+.thanks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  flex: 1 0 auto;
+  &_img {
+    width: 220px;
+    height: 160px;
+    flex-shrink: 0;
+    margin-bottom: 4px;
+  }
+  &_title {
+    font-size: 20px;
+    margin-bottom: -2px;
+  }
+  &_subtitle {
+    font-size: 15px;
+  }
+}
+
+.area {
+  height: 125px;
+}
+
+.btn {
+  width: 100%;
+  max-width: 100%;
+  padding: 18px;
+}
+
+.add {
+  padding: 16px;
+  max-width: 100%;
+  width: 100%;
+}
+
+@media(min-width: 1170px) {
+  .modal {
+    padding-bottom: 0;
+  }
+  .content {
+    padding-bottom: 0;
+  }
+
+  .form {
+    justify-content: space-between;
+    gap: 12px;
+    height: 100%;
+  }
+
+  .name_email {
+    flex-direction: row;
+    gap: 18px;
+  }
+}

@@ -1,0 +1,40 @@
+:root {
+  --font-family: "Onest", sans-serif;
+  --content-width: 500px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --light: #fff;
+  --dark: #292929;
+  --accent: #511e7b;
+  --accent-dark: #401761;
+  --accent-hover: #401761;
+  --accent-active: #32124d;
+  --red: #FD4B5F;
+  --red-hover: #db4153;
+  --red-active: #b63645;
+  --gray: #5F5F5F;
+  --light-gray: #d9d9d9;
+  --yellow: #FFD335;
+  --section-b: 1px solid #D9D9D9;
+  --el-dis-bg: #F6F7FA;
+  --el-dis-c: #98A3AD;
+  --brsys-c: #1E944D;
+  --brsys-c-h: #16733B;
+  --brsys-c-a: #09391D;
+  --bar-bg: #4A4A4A;
+  --bar-cat-bg: #2C2C2C;
+  --bar-cat-btn-bg: #1F1F1F;
+  --bar-nav-bg: #3E3E3E;
+  --bar-nav-btn-bg: #3E3E3E;
+  --bar-nav-btn-b: #4E4E4E;
+  --bar-nav-btn-bg-a: #313131;
+  --search-bg: #EFEFEF;
+  --search-ph: #A7A7A7;
+  --block-b: 1px solid #D9D9D9;
+}
+
+@media(min-width: 1170px) {
+  :root {
+    --content-width: 1170px;
+  }
+}

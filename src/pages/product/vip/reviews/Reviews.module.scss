@@ -1,0 +1,92 @@
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+  &:before {
+    content: '';
+    z-index: -1;
+    background: var(--light);
+    position: absolute;
+    width: 3000px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+  }
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  width: calc(100% + 30px);
+  transform: translate(-15px,0);
+  max-width: calc(100% + 30px);
+  border-radius: 0;
+  padding: 16px;
+  font-size: 12px;
+  position: relative;
+  z-index: 1;
+
+  @media(any-hover: hover) {
+    &:hover {
+      &:before {
+        background: #dddddd;
+      }
+    }
+  }
+
+  &:active {
+    &:before {
+      background: #bdbdbd;
+    }
+  }
+
+  &:before {
+    content: '';
+    background: #f5f5f5;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    width: 3000px;
+    z-index: -1;
+    transition: background .15s linear;
+  }
+
+  &_ico {
+    &_active {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.btn {
+  width: 100%;
+  max-width: 100%;
+  padding: 18px;
+}
+
+@media(min-width: 1170px) {
+  .title {
+    br {
+      display: none;
+    }
+  }
+}

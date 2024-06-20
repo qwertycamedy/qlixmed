@@ -1,0 +1,24 @@
+.logo {
+  color: var(--accent);
+  width: 57px;
+  height: 27px;
+  display: flex;
+  transition: color 0.15s linear;
+
+  svg {
+    fill: currentColor;
+    object-fit: contain;
+    width: inherit;
+    height: inherit;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      color: var(--accent-hover);
+    }
+  }
+
+  &:active {
+    color: var(--accent-active);
+  }
+}

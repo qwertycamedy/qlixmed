@@ -1,0 +1,35 @@
+.btn {
+  width: 100%;
+  max-width: 100%;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 18px;
+}
+
+.call {
+  border-radius: 8px;
+  font-size: 18px;
+  background: rgba(81, 30, 123, 0.1);
+  color: var(--accent);
+}
+
+.whatsapp {
+  text-transform: none;
+  font-size: 16px;
+}
+
+.cancel {
+  font-size: 14px;
+  text-transform: none;
+}
+
+@media(min-width: 1170px) {
+  .fixedBtn {
+    z-index: 9997;
+    position: fixed;
+    left: calc(50% + 525px);
+    bottom: 15px;
+    max-width: max-content;
+    color: var(--light);
+  }
+}

@@ -1,0 +1,39 @@
+.overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: rgba(0, 0, 0, 0.40);
+}
+
+.modal {
+  background: var(--light);
+  box-shadow: 0px -7px 37px 0px rgba(0, 0, 0, 0.08);
+}
+
+.inner {
+  padding-top: 47px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 24px;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translate(-50%,0);
+  width: 52px;
+  height: 6px;
+  border-radius: 48px;
+  background: #d9d9d9;
+}

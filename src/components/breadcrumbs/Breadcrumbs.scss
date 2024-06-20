@@ -1,0 +1,30 @@
+.crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  &__item {
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+
+    &:not(:last-child) {
+      &:after {
+        content: ">";
+        color: var(--light-gray);
+      }
+    }
+
+    &:last-child {
+      pointer-events: none;
+      .crumbs__link {
+        color: var(--search-ph);
+      }
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--accent);
+  }
+}

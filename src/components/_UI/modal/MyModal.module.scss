@@ -1,0 +1,47 @@
+.overlay {
+  background: rgba(0, 0, 0, 0.20);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: var(--light);
+  padding: 80px;
+
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  width: 80px;
+  height: 80px;
+
+  & > svg {
+    width: inherit;
+    height: inherit;
+  }
+
+  color: var(--black);
+
+  @media(any-hover: hover) {
+    &:hover {
+      color: var(--accent);
+    }
+  }
+
+  &:active {
+    color: var(--accent-active);
+  }
+}

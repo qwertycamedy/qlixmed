@@ -1,0 +1,23 @@
+.modal {
+  --bar-height: 130px;
+  padding-bottom: var(--bar-height);
+}
+
+.content {
+  padding-top: 38px;
+}
+
+.btn {
+  width: 100%;
+  max-width: 100%;
+  padding: 18px;
+}
+
+@media(min-width: 1170px) {
+  .modal {
+    padding-bottom: 0;
+  }
+  .content {
+    padding-bottom: 0;
+  }
+}

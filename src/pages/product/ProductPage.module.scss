@@ -1,0 +1,40 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.product {
+  position: relative;
+}
+
+.inner {
+  position: relative;
+}
+
+.crumbs {
+  margin-bottom: 50px;
+}
+
+.goBack {
+  position: absolute;
+  left: 7px;
+  top: 10px;
+}
+
+.notFound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex: 1 0 auto;
+  &_inner {
+    margin: 0 auto;
+  }
+  &_inner,
+  &_subtitle {
+    max-width: 600px !important;
+  }
+}

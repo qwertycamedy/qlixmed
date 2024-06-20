@@ -1,0 +1,72 @@
+.seller {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  width: calc(100% + 30px);
+  left: -15px;
+  padding: 28px 28px 38px;
+  background: var(--dark);
+  color: var(--light);
+  border-radius: 20px;
+}
+
+.img_info {
+  display: flex;
+  gap: 18px;
+}
+
+.img {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 11px;
+}
+
+.name {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.city {
+  font-size: 12px;
+  color: #A4A4A4;
+  margin-bottom: 14px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.rate {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.arrow {
+  margin-top: 12px;
+  color: #707070;
+}
+
+@media(min-width: 1170px) {
+  .seller {
+    left: unset;
+    width: 100%;
+  }
+}
